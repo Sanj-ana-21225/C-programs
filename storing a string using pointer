@@ -1,0 +1,11 @@
+#include <stdio.h>
+int main() 
+{
+    char *strptr ="Hello World";
+    char  *temp = strptr;
+    while(*temp!='\0'){
+    printf("%c", *temp);
+    temp++;
+   }
+    return 0;
+}
