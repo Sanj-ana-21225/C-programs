@@ -1,0 +1,18 @@
+#include <stdio.h>
+int main()
+{
+    int n, i;
+    long fact=1;
+    int *p = &n;        
+    long *pf = &fact; 
+    printf("Enter a number: ");
+    scanf("%d", p);    
+
+    for (i = 1; i <= *p; i++) {
+        *pf = (*pf) * i;   
+    }
+
+    printf("Factorial of %d is %ld\n", *p, *pf);
+
+    return 0;
+}
